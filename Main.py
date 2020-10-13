@@ -124,7 +124,7 @@ def error(bitsdemod, bits):
 # Entrada: 
 #   bitsrate       - tasa de bit
 def simulacionCanal( bitrate ):
-    largosenal = 1e5
+    largosenal = 1e5 # Se puede cambiar a conveniencia
     bits = np.random.randint(2, size = int(largosenal))
     colores = ['-b', '-g', '-r']
     
@@ -178,7 +178,7 @@ print(demod)
 print('TESTING FINALIZADO\n\nCOMENZANDO SIMULACION DE CANAL AWGN')
 print('** Las imagenes solo se muestran, no se almacenan **')
 
-bitrate = 1000
+bitrate = 1000 #Se puede cambiar a conveniencia 
 simulacionCanal(bitrate)
 
 
